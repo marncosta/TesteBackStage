@@ -1,23 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: account-api
-  description: Retrieve account details
+  name: rendafixa-web
+  description: The place to emit orders for negotiate fixed income assets
 spec:
-  type: grpc
+  type: website
   lifecycle: production
-  owner: canais-back-end-squad
-  system: canais-back-end
-  definition: |
-    openapi: "1.0.0"
-    info:
-      version: 1.0.0
-      title: Account API
-      license:
-        name: private
-    servers:
-      - url: http://cpwapp02-rj.modal.net.br
-    paths:
-      /list:
-        get:
-          summary: List all accounts
+  owner: rendafixa-team
+  system: rendafixa-portal
+  providesApis:
+    - getassets-api
