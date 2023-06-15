@@ -1,3 +1,4 @@
 ﻿Teste GIT file
 Teste 2 
 Teste 3
+Teste 4
